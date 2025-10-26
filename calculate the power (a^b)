@@ -1,0 +1,17 @@
+public class PowerCalculation {
+    // Recursive function to calculate a^b
+    public static int power(int a, int b) {
+        if (b == 0) {
+            return 1;
+        }
+        return a * power(a, b - 1);
+    }
+
+    // Example usage
+    public static void main(String[] args) {
+        int base = 2;
+        int exponent = 5;
+        int result = power(base, exponent); // result will be 32
+        System.out.println(base + " raised to power " + exponent + " is " + result);
+    }
+}
