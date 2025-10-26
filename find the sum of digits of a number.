@@ -1,0 +1,16 @@
+public class SumOfDigits {
+    // Recursive function to find sum of digits
+    public static int sumDigits(int number) {
+        if (number == 0) {
+            return 0;
+        }
+        return (number % 10) + sumDigits(number / 10);
+    }
+
+    // Example usage
+    public static void main(String[] args) {
+        int num = 12345;
+        int result = sumDigits(num); // result will be 15
+        System.out.println("Sum of digits: " + result);
+    }
+}
