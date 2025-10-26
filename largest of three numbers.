@@ -1,0 +1,21 @@
+public class LargestNumber {
+    // Function to find the largest of three numbers
+    public static int findLargest(int a, int b, int c) {
+        int largest = a;
+
+        if (b > largest) {
+            largest = b;
+        }
+        if (c > largest) {
+            largest = c;
+        }
+
+        return largest;
+    }
+
+    // Example usage
+    public static void main(String[] args) {
+        int result = findLargest(7, 12, 5); // result will be 12
+        System.out.println("Largest number is: " + result);
+    }
+}
