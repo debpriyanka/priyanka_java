@@ -1,0 +1,23 @@
+public class FibonacciSeries {
+    // Recursive function to get the nth Fibonacci number
+    public static int fibonacci(int n) {
+        if (n <= 1) {
+            return n;
+        }
+        return fibonacci(n - 1) + fibonacci(n - 2);
+    }
+
+    // Function to print Fibonacci series up to N terms
+    public static void printFibonacciSeries(int N) {
+        for (int i = 0; i < N; i++) {
+            System.out.print(fibonacci(i) + " ");
+        }
+    }
+
+    // Example usage
+    public static void main(String[] args) {
+        int N = 10;
+        System.out.print("Fibonacci series up to " + N + " terms: ");
+        printFibonacciSeries(N); // Output: 0 1 1 2 3 5 8 13 21 34
+    }
+}
