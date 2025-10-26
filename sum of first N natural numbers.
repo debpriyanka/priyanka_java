@@ -1,0 +1,12 @@
+public class SumOfNaturalNumbers {
+    // Function to calculate the sum of first N natural numbers
+    public static int sumOfFirstN(int n) {
+        return n * (n + 1) / 2;
+    }
+
+    // Example usage
+    public static void main(String[] args) {
+        int result = sumOfFirstN(10); // result will be 55
+        System.out.println("Sum of first 10 natural numbers: " + result);
+    }
+}
